@@ -101,6 +101,82 @@ img {
   line-height: 46px;
   color: #4d533c;
 }
+.phone {
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.menu {
+  position: fixed;
+  left: -350vh;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #475423;
+  z-index: 1000;
+  transition: left .3s;
+}
+
+.menu--visible {
+  left: 0;
+  transition: left .3s;
+}
+
+.menu__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10%;
+  right: 10%;
+}
+
+.menu__close-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(47, 34, 34, 0.4);
+}
+.menu__close-line:first-child {
+  transform: rotate(45deg);
+}
+
+.menu__close-line:last-child {
+  transform: rotate(-45deg);
+}
+.menu__nav {
+  width: 100%;
+  height: 100%;
+}
+
+.menu__ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.menu__link {
+  display: inline-block;
+  margin-bottom: 27px;
+  color: #ffffff;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: #ffd723;
+  transition: color 0.3s;
+}
+
 
 .header {
   padding: 24px 0;
@@ -443,6 +519,7 @@ img {
   .footer-column:last-child::before {
     display: none;
   }
+}
   @media (max-width: 768px) {
     .hero-title {
       font-size: 50px;
@@ -451,7 +528,10 @@ img {
       font-size: 54px;
       line-height: 65px;
     }
+    .menu__ul {
+      font-size: 40px;
   }
+}
   @media (max-width: 576px) {
     .services {
       padding-top: 50px;
@@ -507,5 +587,11 @@ img {
     .footer-mail {
       font-size: 20px;
     }
+    .menu__ul {
+
+      font-size: 30px;
+  }
+  .phone {
+    font-size: 22px;
   }
 }

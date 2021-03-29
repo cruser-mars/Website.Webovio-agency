@@ -9,6 +9,21 @@
     <title>Webovio</title>
   </head>
   <body>
+    <div class="menu">
+      <button class="menu__close btn-reset" aria-label="close menu">
+        <span class="menu__close-line"></span>
+        <span class="menu__close-line"></span>
+      </button>
+      <nav class="menu__nav">
+        <ul class="menu__ul list-reset">
+          <li class="menu__li"><a href="#services" class="menu__link section-link">Services</a></li>
+          <li class="menu__li"><a href="#get-started" class="menu__link section-started">Started</a></li>
+          <li class="menu__li"><a href="#contacts" class="menu__link section-contacts">Contacts</a></li>
+
+          <a href="tel:+798788787" class="phone phone-menu">+7 (987) 887-87</a>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="container header-container">
         <a href="" class="logo">
@@ -50,7 +65,7 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
           </div>
         </div>
       </section>
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
           <h2 class="services-title site-title">
             Deation &amp;&nbsp;Evaluation&nbsp;&mdash; Best Way to&nbsp;Kick off
@@ -141,7 +156,7 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
           </ul>
         </div>
       </section>
-      <section class="get-started">
+      <section id="get-started" class="get-started">
         <div class="container">
           <h2 class="get-started-title">
             Let&rsquo;s make something amazing together.
@@ -163,7 +178,7 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="contacts" class="footer">
       <div class="container">
         <div class="footer-top">
           <div class="footer-contacts-item">
@@ -254,5 +269,6 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
