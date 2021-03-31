@@ -582,6 +582,9 @@ img {
     .logo {
       width: 65%;
     }
+    .hero {
+      padding-top: 143px;
+    }
     .footer-middle {
       grid-template-columns: repeat(1, 1fr);
       gap: 40px;
