@@ -1,10 +1,12 @@
-const burger = document.querySelector('.burger'),
+;(function() {
+ const burger = document.querySelector('.burger'),
  menu = document.querySelector('.menu'),
  btnClose = document.querySelector('.menu__close'),
  ScrollToSection = document.querySelector('.section-link'),
  ScrollToSectionSecond = document.querySelector('.section-started'),
  ScrollToSectionEnd = document.querySelector('.section-contacts'),
  headerPage = document.querySelector('.header');
+
 
  window.addEventListener('scroll', function() {
 if (window.pageYOffset > 0) {
@@ -33,3 +35,5 @@ ScrollToSectionSecond.addEventListener('click', () => {
 ScrollToSectionEnd.addEventListener('click', () => {
     menu.classList.remove('menu--visible');
 });
+
+})();

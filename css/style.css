@@ -185,14 +185,12 @@ img {
   right: 0;
   top: 0;
   width: 100%;
-  transition: padding .6s;
+  transition: background-color .6s;
 }
 
 .header.is-active {
   background-color: #f3ba0f;
   z-index: 10;
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .header-container {
@@ -538,6 +536,10 @@ img {
     }
     .menu__ul {
       font-size: 40px;
+  }
+  .header {
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
   @media (max-width: 576px) {
