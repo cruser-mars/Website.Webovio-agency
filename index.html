@@ -9,31 +9,18 @@
     <title>Webovio</title>
   </head>
   <body>
-    <div class="menu">
-      <button class="menu__close btn-reset" aria-label="close menu">
-        <span class="menu__close-line"></span>
-        <span class="menu__close-line"></span>
-      </button>
-      <nav class="menu__nav">
-        <ul class="menu__ul list-reset">
-          <li class="menu__li"><a href="#services" class="menu__link section-link">Services</a></li>
-          <li class="menu__li"><a href="#get-started" class="menu__link section-started">Started</a></li>
-          <li class="menu__li"><a href="#contacts" class="menu__link section-contacts">Contacts</a></li>
-
-          <a href="tel:+798788787" class="phone phone-menu">+7 (987) 887-87</a>
-        </ul>
-      </nav>
-    </div>
     <header class="header">
       <div class="container header-container">
         <a href="" class="logo">
           <img src="./img/Logo.svg" alt="Webovio Logo" />
         </a>
-        <button class="burger btn-reset" aria-label="Open menu">
+        <div class="humburger">
+        <button class="burger btn-reset" aria-label="Open menu" data-popup="popup-menu">
           <span class="burger-line"></span>
           <span class="burger-line"></span>
           <span class="burger-line"></span>
         </button>
+      </div>
       </div>
     </header>
     <main>
@@ -48,7 +35,7 @@
               Anteelo is&nbsp;a&nbsp;leading strategic design firm that builds
               powerful digital solutions for startups and enterprises.
             </p>
-            <a href="#" class="hero-link link">
+            <a href="#" class="hero-link link" data-scroll-to="footer-bottom">
                 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
@@ -65,7 +52,7 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
           </div>
         </div>
       </section>
-      <section id="services" class="services">
+      <section class="services">
         <div class="container">
           <h2 class="services-title site-title">
             Deation &amp;&nbsp;Evaluation&nbsp;&mdash; Best Way to&nbsp;Kick off
@@ -78,7 +65,7 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
                 A&nbsp;five-day workshop that will help you answer crucial
                 business questions
               </p>
-              <a href="#" class="services-link link">
+              <a href="#" class="services-link link" data-scroll-to="footer-top">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
 <g>
@@ -98,7 +85,7 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
                 A&nbsp;workshop aimed at&nbsp;shaping your business idea,
                 answering questions regarding project planning
               </p>
-              <a href="#" class="services-link link">
+              <a href="#" class="services-link link" data-scroll-to="footer-top">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
                 <g>
@@ -118,7 +105,7 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
                 An&nbsp;evaluation which will help you radically improve your
                 product.
               </p>
-              <a href="#" class="services-link link">
+              <a href="#" class="services-link link" data-scroll-to="footer-top">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
                 <g>
@@ -139,7 +126,7 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
                 of&nbsp;success is&nbsp;what makes people successful
                 in&nbsp;business
               </p>
-              <a href="#" class="services-link link">
+              <a href="#" class="services-link link" data-scroll-to="footer-top">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
                 <g>
@@ -156,12 +143,12 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
           </ul>
         </div>
       </section>
-      <section id="get-started" class="get-started">
+      <section class="get-started">
         <div class="container">
           <h2 class="get-started-title">
             Let&rsquo;s make something amazing together.
           </h2>
-          <a href="#" class="get-started-link link">
+          <a href="#" class="get-started-link link" data-scroll-to="footer-bottom">
  
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
@@ -180,7 +167,7 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
     </main>
     <footer class="footer">
       <div class="container">
-        <div id="contacts" class="footer-top">
+        <div class="footer-top">
           <div class="footer-contacts-item">
             <span class="footer-contacts-text">Phone</span>
             <a class="footer-contacts-value" href="tel:+3250312832"
@@ -269,6 +256,35 @@ viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;"
         </div>
       </div>
     </footer>
+
+    <div class="popup popup-menu">
+      <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content  popup__content--fluid popup__content--centered">
+            <button class="menu__close btn-reset popup-close" aria-label="close menu">
+            </button>
+            <nav class="menu__nav">
+              <ul class="menu__ul list-reset">
+                <li class="menu__li">
+                  <a class="menu__link popup-close" href="#" data-scroll-to="services">Services</a>
+                </li>
+                <li class="menu__li">
+                  <a  class="menu__link popup-close" href="#" data-scroll-to="get-started">Started</a>
+                </li>
+                <li class="menu__li">
+                  <a href="#" class="menu__link popup-close" data-scroll-to="footer-top">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="phone">
+              <a href="tel:+798788787" class="phone phone-menu">+7 (987) 887-87</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
+    <script src="js/ScrollTo.js"></script>
+    <script src="js/myLib.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
