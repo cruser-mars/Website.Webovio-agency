@@ -173,6 +173,7 @@ img {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  margin-bottom: 35px;
 }
 
 .menu__ul {
@@ -570,7 +571,7 @@ img {
 /* 819647 */
 .popup__content {
   background: #000000;
-  padding: 70px 20px;
+  padding: 140px 20px;
   margin: 0 auto;
   position: relative;
   border-radius: 20px;
